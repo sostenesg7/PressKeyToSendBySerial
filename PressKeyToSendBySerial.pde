@@ -194,46 +194,121 @@ public void update() {
   }
 }
 
+public void left() {
+  if(started){
+       updateStatusLabel("ESQUERDA");
+      sendData("LEFT");
+  }
+}
+
+public void right() {
+  if(started){
+       updateStatusLabel("DIREITA");
+      sendData("RIGHT");
+  }
+}
+
+public void up() {
+  if(started){
+     updateStatusLabel("ACIMA");
+    sendData("UP");
+  }
+}
+
+public void down() {
+  if(started){
+      updateStatusLabel("ABAIXO");
+      sendData("DOWN");
+  }
+}
+
 void keyReleased(){
   char keyPress = Character.toUpperCase(key);
-  switch(keyPress) {
-      case('A'):
-      ((Button) cp5.get(Button.class, "left")).setImage(imgsLeft[0]);
-      break;
-      case('W'):
-      ((Button) cp5.get(Button.class, "up")).setImage(imgsUp[0]);
-      break;
-      case('D'):
-      ((Button) cp5.get(Button.class, "right")).setImage(imgsRight[0]);
-      break;
-      case('S'):
-      ((Button) cp5.get(Button.class, "down")).setImage(imgsDown[0]);
-      break;
-    }
+   if(key == CODED){
+      switch(keyCode) {
+          case(LEFT):
+           ((Button) cp5.get(Button.class, "left")).setImage(imgsLeft[0]);
+        break;
+        case(UP):
+          ((Button) cp5.get(Button.class, "up")).setImage(imgsUp[0]);
+        break;
+        case(RIGHT):
+          ((Button) cp5.get(Button.class, "right")).setImage(imgsRight[0]);
+        break;
+        case(DOWN):
+          ((Button) cp5.get(Button.class, "down")).setImage(imgsDown[0]);
+        break;
+      }
+  }else{
+      switch(keyPress) {
+          case('A'):
+          ((Button) cp5.get(Button.class, "left")).setImage(imgsLeft[0]);
+          break;
+          case('W'):
+          ((Button) cp5.get(Button.class, "up")).setImage(imgsUp[0]);
+          break;
+          case('D'):
+          ((Button) cp5.get(Button.class, "right")).setImage(imgsRight[0]);
+          break;
+          case('S'):
+          ((Button) cp5.get(Button.class, "down")).setImage(imgsDown[0]);
+          break;
+        }
+  }
 }
 
 void keyPressed() {
   char keyPress = Character.toUpperCase(key);
-  switch(keyPress) {
-    case('A'):
-    updateStatusLabel("A");
-    ((Button) cp5.get(Button.class, "left")).setImage(imgsLeft[1]);
-    sendData("A");
-    break;
-    case('W'):
-    updateStatusLabel("W");
-    ((Button) cp5.get(Button.class, "up")).setImage(imgsUp[1]);
-    sendData("W");
-    break;
-    case('D'):
-    updateStatusLabel("D");
-    ((Button) cp5.get(Button.class, "right")).setImage(imgsRight[1]);
-    sendData("D");
-    break;
-    case('S'):
-    updateStatusLabel("S");
-    ((Button) cp5.get(Button.class, "down")).setImage(imgsDown[1]);
-    sendData("S");
-    break;
+  
+  if(key == CODED){
+      switch(keyCode) {
+          case(LEFT):
+          updateStatusLabel("ESQUERDA");
+          ((Button) cp5.get(Button.class, "left")).setImage(imgsLeft[1]);
+          sendData("LEFT");
+        break;
+        case(UP):
+          updateStatusLabel("ACIMA");
+          ((Button) cp5.get(Button.class, "up")).setImage(imgsUp[1]);
+          sendData("UP");
+        break;
+        case(RIGHT):
+          updateStatusLabel("DIREITA");
+          ((Button) cp5.get(Button.class, "right")).setImage(imgsRight[1]);
+          sendData("RIGHT");
+        break;
+        case(DOWN):
+          updateStatusLabel("ABAIXO");
+          ((Button) cp5.get(Button.class, "down")).setImage(imgsDown[1]);
+          sendData("DOWN");
+        break;
+      }
+  }else{   
+      switch(keyPress) {
+        case('A'):
+          updateStatusLabel("A");
+          ((Button) cp5.get(Button.class, "left")).setImage(imgsLeft[1]);
+          sendData("A");
+        break;
+        case('W'):
+          updateStatusLabel("W");
+          ((Button) cp5.get(Button.class, "up")).setImage(imgsUp[1]);
+          sendData("W");
+        break;
+        case('D'):
+          updateStatusLabel("D");
+          ((Button) cp5.get(Button.class, "right")).setImage(imgsRight[1]);
+          sendData("D");
+        break;
+        case('S'):
+          updateStatusLabel("S");
+          ((Button) cp5.get(Button.class, "down")).setImage(imgsDown[1]);
+          sendData("S");
+        break;
+        default:
+           updateStatusLabel(String.valueOf(keyPress));
+          sendData(String.valueOf(keyPress));
+        break;
+      }
   }
 }
