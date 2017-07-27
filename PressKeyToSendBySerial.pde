@@ -26,7 +26,7 @@ void setup() {
     started = false;
     baudRateList = Arrays.asList("4800", "9600", "19200", "38400", "57600", "115200");
     btnColor = new CColor();
-    //PFont font = createFont("Times", 10);
+    PFont font = createFont("Arial", 13);
 
     selectedBaudRate = 9600;
     size(400, 400);
@@ -67,6 +67,12 @@ void setup() {
         setCaptionLabel("Abrir");
             
      cp5.addTextlabel("lblStatus")
+      .setColor(color(0,0,0));
+      
+     cp5.addTextlabel("lblCredits")
+     .setPosition(0,380)
+     .setFont(font)
+     .setStringValue("Developed by: Sostenes Gomes [https://github.com/sostenesg7/]")
       .setColor(color(0,0,0));
       //.setFont(font);
             
