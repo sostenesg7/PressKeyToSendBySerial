@@ -19,7 +19,11 @@ void loop() {
       }else if(readData == "LEFT"){//ESQUERDA
 
       }else if(readData == "RIGHT"){//DIREITA
-
+		
+      }else if(readData == "ENTER"){
+        
+      }else if(readData == "SPACE"){
+        
       }else if(readData == "A"){//DEMAIS TECLAS ABAIXO
         
       }else if(readData == "W"){
