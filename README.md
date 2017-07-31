@@ -10,5 +10,8 @@ To download the application for Windows and Linux go to [releases](https://githu
 Direct Java executable: [Download](https://github.com/sostenesg7/PressKeyToSendBySerial/blob/master/releases/PressKeyboardToSendBySerial%5BPREFERENCIAL%5D.jar)
 
 # For developers
-The library for GUI is ControlP5.
-Available in: https://github.com/sojamo/controlp5 or http://www.sojamo.de/libraries/controlP5/
+The Processing library for GUI is ControlP5.
+Available in:
+https://github.com/sojamo/controlp5 
+or 
+http://www.sojamo.de/libraries/controlP5/
