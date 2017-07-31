@@ -4,3 +4,9 @@ The main purpose is to use with Arduino to control anything, depending of develo
 
 PT - A finalidade deste programa é enviar dados através da porta Serial, pelo pressionamento das teclas do teclado, especialmente A, W, D, S e direcionais como ESQUERDA, DIREITA, PARA CIMA e PARA BAIXO.
 O objetivo principal é usar com Arduino para controlar qualquer coisa, dependendo da necessidade do desenvolvedor.
+
+The library for GUI is ControlP5.
+Available in: 
+	https://github.com/sojamo/controlp5
+or
+	http://www.sojamo.de/libraries/controlP5/
