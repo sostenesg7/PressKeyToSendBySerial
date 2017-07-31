@@ -6,17 +6,13 @@ PT - A finalidade deste programa é enviar dados através da porta Serial, pelo 
 
 # Download executables (Executáveis)
 EN - To download the application for Windows and Linux go to [releases](https://github.com/sostenesg7/PressKeyToSendBySerial/tree/master/releases)
+Direct Java executable: [Download](https://github.com/sostenesg7/PressKeyToSendBySerial/blob/master/releases/PressKeyboardToSendBySerial%5BPREFERENCIAL%5D.jar)
 
 PT - Para baixar a aplicação para Windows e Linux, vá para [releases](https://github.com/sostenesg7/PressKeyToSendBySerial/tree/master/releases)
-
-EN - Direct Java executable: [Download](https://github.com/sostenesg7/PressKeyToSendBySerial/blob/master/releases/PressKeyboardToSendBySerial%5BPREFERENCIAL%5D.jar)
-
-PT - Executável Java direto: [Download](https://github.com/sostenesg7/PressKeyToSendBySerial/blob/master/releases/PressKeyboardToSendBySerial%5BPREFERENCIAL%5D.jar)
-
+Executável Java direto: [Download](https://github.com/sostenesg7/PressKeyToSendBySerial/blob/master/releases/PressKeyboardToSendBySerial%5BPREFERENCIAL%5D.jar)
 
 # For developers (Para desenvolvedores)
-The Processing library for GUI is ControlP5.
-Available in:
+The Processing library for GUI is ControlP5 available in:
 https://github.com/sojamo/controlp5 
 or 
 http://www.sojamo.de/libraries/controlP5/
